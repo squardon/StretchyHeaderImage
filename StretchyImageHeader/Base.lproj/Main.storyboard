@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ee8-NX-Geg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Fms-mo-fKE">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Ee8-NX-Geg" customClass="ViewController" customModule="StretchyImageHeader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpn-9D-rAl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Eb-KN-gbV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLW-A4-ZjK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jm-a7-A3s">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clem-onojeghuo-hxhg3ul-CDw-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="gCL-E2-udW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="gCL-E2-udW" firstAttribute="top" secondItem="0Jm-a7-A3s" secondAttribute="top" id="7Fg-Y0-iiX"/>
+                                                    <constraint firstItem="gCL-E2-udW" firstAttribute="leading" secondItem="0Jm-a7-A3s" secondAttribute="leading" id="7gM-uk-Eci"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gCL-E2-udW" secondAttribute="bottom" id="NYO-OK-cOi"/>
+                                                    <constraint firstAttribute="height" constant="250" id="l5z-TO-XRe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gCL-E2-udW" secondAttribute="trailing" id="xir-fP-xlJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="0Jm-a7-A3s" firstAttribute="leading" secondItem="fLW-A4-ZjK" secondAttribute="leading" id="0Ag-DH-nb1"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Jm-a7-A3s" secondAttribute="trailing" id="jKD-wN-vw9"/>
+                                            <constraint firstItem="0Jm-a7-A3s" firstAttribute="top" secondItem="fLW-A4-ZjK" secondAttribute="top" id="moL-y9-f66"/>
+                                            <constraint firstAttribute="height" constant="808" id="xcF-Z0-7oG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fLW-A4-ZjK" secondAttribute="trailing" id="0Uf-39-Ais"/>
+                                    <constraint firstItem="fLW-A4-ZjK" firstAttribute="leading" secondItem="6Eb-KN-gbV" secondAttribute="leading" id="Dao-eH-dx6"/>
+                                    <constraint firstItem="fLW-A4-ZjK" firstAttribute="top" secondItem="6Eb-KN-gbV" secondAttribute="top" id="LpK-bm-hg5"/>
+                                    <constraint firstAttribute="bottom" secondItem="fLW-A4-ZjK" secondAttribute="bottom" id="Pl0-Y2-Fss"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fLW-A4-ZjK" firstAttribute="width" secondItem="qpn-9D-rAl" secondAttribute="width" id="Cda-BH-OWA"/>
+                            <constraint firstItem="6Eb-KN-gbV" firstAttribute="leading" secondItem="qpn-9D-rAl" secondAttribute="leading" id="KRd-Tk-yym"/>
+                            <constraint firstItem="6Eb-KN-gbV" firstAttribute="top" secondItem="qpn-9D-rAl" secondAttribute="top" id="Pns-Pe-wLB"/>
+                            <constraint firstAttribute="bottom" secondItem="6Eb-KN-gbV" secondAttribute="bottom" id="oV2-AN-g5F"/>
+                            <constraint firstAttribute="trailing" secondItem="6Eb-KN-gbV" secondAttribute="trailing" id="uo7-ud-ejj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x18-Ru-vc3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8tV-kq-beR"/>
+                    <connections>
+                        <outlet property="childImgView" destination="0Jm-a7-A3s" id="uY9-2v-wGf"/>
+                        <outlet property="parentScrollView" destination="6Eb-KN-gbV" id="LKS-mI-j1P"/>
+                        <outlet property="parentSubView" destination="fLW-A4-ZjK" id="V6u-cR-9fb"/>
+                        <outlet property="parentViewHC" destination="l5z-TO-XRe" id="62K-OT-uKy"/>
+                        <outlet property="topChildConstraint" destination="moL-y9-f66" id="Jho-zU-XGO"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJF-RY-qow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1394.2028985507247" y="962.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clem-onojeghuo-hxhg3ul-CDw-unsplash" width="5252" height="3379"/>
+    </resources>
 </document>
